@@ -1,5 +1,8 @@
-const { combineReducers } = require('redux');
+import { combineReducers } from 'redux';
+import { positionsReducer } from './positions/positions-reducer';
 
-const rootReducer = combineReducers({});
+const rootReducer = combineReducers({
+  positions: positionsReducer,
+});
 
 export { rootReducer };
